@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>koldkrigsmuseum</title>
+    <meta name="description" content="Geomuseet Faxe, Kalklandet Stevns Klint. En del af Unesco's verdensarv" />
+    <meta name="keywords" content="Stevns Klint, UNESCO Verdensarv, Kalklandet" />
+    <meta name="author" content="Charlotte Fuchs" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <style type="text/css">
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <ul id="menu" class="menu-main">
+            <li class="trigger">
+                <a class="icon icon-menu"><span>Menu</span></a>
+                <nav class="menu-wrapper">
+                    <div class="scroller">
+                        <ul class="menu">
+                            <li class="search-item">
+                                <input placeholder="Search" type="search" class="search">
+                                <a class="icon icon-search"><img class="icon" src="slider/ikoner/STEVNS_MUSEUM_ikon.png"><span>Søg</span></a>
+                            </li>
+                            <li>
+                                <div>
+                                    <img class="icon" src="slider/ikoner/STEVNS_MUSEUM_ikon.png">
+                                    <a href="http://medicinolie.dk/kalklandet/index.html">Stevns Klint</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img class="icon" src="slider/ikoner/Geomuseum_Faxe_Kalkbrud_fossil_ikon.png">
+                                    <a href="http://medicinolie.dk/kalklandet/geomuseet_Faxe.html">Geomuseum Faxe</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img class="icon" src="slider/ikoner/stevns_naturcenter_ikon.png">
+                                    <a href="">Stevns Naturcenter</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img class="icon" src="slider/ikoner/Koldkrigsmuseum_stevnsfort_kalklandet_ikon.png">
+                                    <a href="">Koldkrigsmuseum</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img class="icon" src="slider/ikoner/STEVNS_MUSEUM_ikon.png">
+                                    <a href="">Viden</a>
+                                </div>
+                                <div>
+                                    <img class="icon" src="slider/ikoner/STEVNS_MUSEUM_ikon.png">
+                                    <a href="">Stevns Klint</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img class="icon" src="slider/ikoner/STEVNS_MUSEUM_ikon.png">
+                                    <a href="">Stevns Klint</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div><!-- /scroller -->
+                </nav>
+              </li>
+            <li><img class="mobileLogo" src="slider/ikoner/kalklandet_lille_ikon.png"></li>
+            <li><p class="mobileTekst"> en del af Unesco's verdensarv</p></li>
+            <li><img class="myLogo" src="slider/museum_kalklandet_logo_1.png" /></li>
+        </ul>
+        <header>
+            <div id="splash" class="responsive" src="slider/fossiler.jpg">
+                <a id="mobileSplash" class="mobile" href=""></a>
+                <div class="container">
+                    <h1 class="animate">Stevns Klint</h1>
+                    <div class="banner_inner">
+                        <img class="mySlides" src="slider/geomuseet_faxe.png" />
+                        <img class="mySlides" src="slider/Koldkrigsmuseum_stevnsfort_kalklandet.png" />
+                        <img class="mySlides" src="slider/stevns_naturcenter.png" />
+                        <img class="mySlides" src="slider/stevns_museum_kalklandet_unescos_verdensarv.png" />
+                        <img class="mySlides" src="slider/haslev_museum1.png" />
+                        <img class="mySlides" src="slider/stevns_fyr.png" />
+                    </div>
+                </div>
+            </div><!-- /splash -->
+        </header>
+    </div><!-- /container -->
+
+    <script src="js/classie.js"></script>
+    <script src="js/myMenu.js"></script>
+    <script>
+        new myMenu(document.getElementById('menu'));
+
+    </script>
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 3000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+
+</html>
