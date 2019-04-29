@@ -733,6 +733,7 @@ div.pagesGrid-item:nth-child(6) {
     display: grid;
     grid-template-columns: 1fr;
     padding-bottom: 0px;
+    display: flex;
 }
 /*div.pagesGrid-item-container {
     width: 100%;
