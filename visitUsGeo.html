@@ -13,28 +13,35 @@
     <link rel="stylesheet" type="text/css" href="css/component.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <style type="text/css">
-        header{
+        header {
             display: none;
         }
+
         #splash {
-    display: none !important;
-}
+            display: none !important;
+        }
+
         #mobileSplash {
-    display: none !important;
-}
-        .banner_inner{
-    display: none !important;
-}
+            display: none !important;
+        }
+
+        .banner_inner {
+            display: none !important;
+        }
+
         main {
             max-width: 100%;
             margin-top: 60px;
         }
+
         h1.animate {
-    display: none !important;
-}
-        .navi{
-    margin-top: -30px;
-    }
+            display: none !important;
+        }
+
+        .navi {
+            margin-top: -30px;
+        }
+
     </style>
 </head>
 
@@ -93,9 +100,11 @@
                         </ul>
                     </div><!-- /scroller -->
                 </nav>
-              </li>
+            </li>
             <li><img class="mobileLogo" src="slider/ikoner/kalklandet_lille_ikon.png"></li>
-            <li><p class="mobileTekst"> en del af Unesco's verdensarv</p></li>
+            <li>
+                <p class="mobileTekst"> en del af Unesco's verdensarv</p>
+            </li>
             <li><img class="myLogo" src="slider/museum_kalklandet_logo_1.png" /></li>
         </ul>
         <header>
@@ -115,31 +124,51 @@
             </div><!-- /splash -->
         </header>
     </div><!-- /container -->
+
+    <div class="">
+        <h2>Aktuelt</h2>
+
+            <div> <span>25 Apr 2019</span>
+                <h3>Kranier og kold krig til kaffen </h3>
+            </div>
+                <p>
+                    I forbindelse med forskningens døgn har Østsjællands Museum og Museum Lolland-Falster kastet sig over en anderledes form for historieformidling, som kan nydes hjemme i sofaen.
+                    Denne dag samles et...</p>
+
+            <div> <span>05 Apr 2019</span>
+                <h3>Særudstilling</h3>
+            </div>
+                <p>Årets særudstilling 2019 på Koldkrigsmuseum fokuserer på militæralliancen som fylder 70 år. Danmark var med som en af de oprindelige medunderskrivere den 4. april 1949.
+                    Særudstillingen hedder "NATO...</p>
+                    <a href="/attraktioner/koldkrigsmuseum-stevnsfort/saerudstilling-aktiviteter/saerudstilling-om-nato">Læs mere</a>
+        </div>
     <div class="area-wrapper">
-    <main class="kalken">
-        <h1 class="overskrift"></h1>
-        <section class="indhold">
+        <main class="kalken">
+            <h1 class="overskrift"></h1>
+            <section class="indhold">
 
-        </section>
-        <section class="kalken">
+            </section>
+            <section class="kalken">
 
-        </section>
-    </main>
-    <!--------->
-    <template>
-        <article class="kalk">
-            <h2 class="grid-item"></h2>
-            <p class="grid-item"></p>
-            <img class="grid-item" class="billede"src="" alt="" />
-            <div class="grid-item"></div>
-        </article>
-    </template>
-</div>
+            </section>
+        </main>
+        <!--------->
+        <template>
+            <article class="kalk">
+                <h2 class="grid-item"></h2>
+                <p class="grid-item"></p>
+                <img class="grid-item" class="billede" src="" alt="" />
+                <div class="grid-item"></div>
+            </article>
+        </template>
+    </div>
 
-<!-- Footer -->
+    <!-- Footer -->
     <footer class="page-footer">
-        <div class="conta"><!-- Footer Elements -->
-            <div class="row"><!-- Grid row-->
+        <div class="conta">
+            <!-- Footer Elements -->
+            <div class="row">
+                <!-- Grid row-->
                 <!-- Grid column -->
                 <div class="col-md-12 py-5">
                     <div class="mb-5 flex-center">
@@ -154,11 +183,14 @@
                         </a><!-- Google +-->
                         <a class="ins-ic">
                             <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                        </a><!--Instagram-->
+                        </a>
+                        <!--Instagram-->
                         <a class="pin-ic">
                             <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
-                        </a><!--Pinterest-->
-                    </div><!--flext-->
+                        </a>
+                        <!--Pinterest-->
+                    </div>
+                    <!--flext-->
                 </div><!-- Grid column -->
             </div><!-- Grid row-->
         </div><!-- Footer Elements -->
@@ -175,7 +207,7 @@
         document.addEventListener("DOMContentLoaded", start);
 
         function start() {
-           hentJson1();
+            hentJson1();
             hentJson2();
         }
 
@@ -244,6 +276,7 @@
             x[myIndex - 1].style.display = "block";
             setTimeout(carousel, 3000); // Change image every 2 seconds
         }
+
     </script>
 </body>
 
