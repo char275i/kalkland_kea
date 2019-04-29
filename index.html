@@ -9,10 +9,17 @@
     <meta name="description" content="Kalklandet, Stevns Klint, Unesco's verdensarv, geomuseum Faxe, Koldkrigsmuseum" />
     <meta name="keywords" content="Stevns Klint, UNESCO Verdensarv, Kalklandet" />
     <meta name="author" content="Charlotte Fuchs" />
+    <link rel="stylesheet" type="text/css" href="css/grid.css" />
     <link rel="stylesheet" type="text/css" href="css/demo.css" />
     <link rel="stylesheet" type="text/css" href="css/component.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <style type="text/css">
+    <style>
+        /* frontGrid indhold */
+        .overskrift {
+            text-align: center;
+            display: none;
+        }
+
     </style>
 </head>
 
@@ -144,7 +151,7 @@
             </article>
         </template>
     </div>
-        <div id="wrapper">
+    <div id="wrapper">
         <div id="footer">
             <div class="breakFooter">
                 <div class="footerFloat">
@@ -173,19 +180,19 @@
                     </ul>
                 </div>
             </div>
-          <div class="footerFloat">
-                    <h4>Hvem er vi</h4>
-                    <ul>
-                        <li>Østsjællands Museumsforening</li>
-                        <li>Ledige stillinger</li>
-                        <li>Museets historie</li>
-                        <li>Medarbejdere</li>
-                        <li>Frivillige</li>
-                        <li>Bestyrelse</li>
-                        <li>Sponsorer</li>
-                        <li>Presse</li>
-                    </ul>
-                </div>
+            <div class="footerFloat">
+                <h4>Hvem er vi</h4>
+                <ul>
+                    <li>Østsjællands Museumsforening</li>
+                    <li>Ledige stillinger</li>
+                    <li>Museets historie</li>
+                    <li>Medarbejdere</li>
+                    <li>Frivillige</li>
+                    <li>Bestyrelse</li>
+                    <li>Sponsorer</li>
+                    <li>Presse</li>
+                </ul>
+            </div>
             <div class="breakFooter">
                 <div class="footerFloat">
                     <h4>Find vej</h4>
@@ -252,35 +259,6 @@
         }
 
     </script>
-    <!--<script>
-        let kalken = [];
-        document.addEventListener("DOMContentLoaded", hentJason);
-
-        async function hentJason() {
-            const url = "http://medicinolie.dk/kalklandet/wordpress/wp-json/wp/v2/kalk";
-
-            const myJson = await fetch(url);
-
-            kalken = await myJson.json();
-
-            visKalken();
-        }
-
-        function visKalken() {
-            let dest = document.querySelector(".kalken");
-            let temp = document.querySelector("template");
-
-            kalken.forEach(kalk => {
-                let klon = temp.cloneNode(true).content;
-                klon.querySelector("h2").innerHTML = kalk.title.rendered;
-                klon.querySelector("div").innerHTML = kalk.beskrivelse;
-                klon.querySelector("img").src = kalk.billede.guid;
-
-                dest.appendChild(klon);
-            })
-        }
-
-    </script>-->
     <script src="js/classie.js"></script>
     <script src="js/myMenu.js"></script>
     <script>
