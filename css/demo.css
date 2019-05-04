@@ -92,7 +92,7 @@ img.mySlides {
 }
 
 div#splash.demo-banner {
-    max-width: 100%:
+    max-width: 100%;
 }
 
 #splash {
@@ -193,7 +193,6 @@ h1.animate {
 }
 
 .navi li {
-    font-size: 0.8em;
     line-height: 60px;
     height: 60px;
     border-bottom: 1px solid #b3aa87;
