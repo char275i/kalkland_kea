@@ -56,7 +56,7 @@ h2.grid-item {
 div.flag_inner {
     position: absolute;
     right: 0% !important;
-    top: 23%;
+    top: 15%;
     display: flex;
     flex-direction: column;
     float: right;
