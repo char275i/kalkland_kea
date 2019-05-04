@@ -1,4 +1,3 @@
-
 /* styles for opening menu */
 
 .menu-wrapper.open-all,
@@ -15,9 +14,10 @@
 .menu-wrapper.open-all .submenu li {
     max-height: 40px
 }
+
 /*menu*/
 
-  .menu-main,
+.menu-main,
 .menu-main ul {
     margin: 0;
     padding: 0;
@@ -261,11 +261,12 @@ img.icon {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
 /* if an icon anchor has a span, hide the span */
 
 .icon-menu::before {
     margin-left: -15px;
-   /* vertical-align: -2px;*/
+    /* vertical-align: -2px;*/
     width: 30px;
     height: 3px;
     background: #796d65;
@@ -283,6 +284,7 @@ img.icon {
     background: #796d65;
     box-shadow: 0 3px #ec7f44, 0 -6px #796d65, 0 -9px #ec7f44, 0 -12px #796d65;
 }
+
 /* ikon */
 
 .icon::before {

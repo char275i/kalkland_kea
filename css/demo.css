@@ -79,6 +79,9 @@ h2.grid-item{
 label2{
   display: none;
       }
+      span{
+  display: none;
+      }
 /* Menu Items */
 .page-nav p{
   display: none;
@@ -144,6 +147,13 @@ label2{
     padding: 10px;
   }
   label2 {
+    display: block;
+    float: right;
+    padding-top: 15px;
+    padding-right: 12px;
+    color: #ec7f44;
+}
+span {
     display: block;
     float: right;
     padding-top: 15px;

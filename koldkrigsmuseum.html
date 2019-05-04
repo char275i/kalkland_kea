@@ -1,18 +1,250 @@
 <!DOCTYPE html>
-<html lang="da">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="da" xml:lang="da">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="noindex, follow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>koldkrigsmuseum</title>
-    <meta name="description" content="Geomuseet Faxe, Kalklandet Stevns Klint. En del af Unesco's verdensarv" />
-    <meta name="keywords" content="Stevns Klint, UNESCO Verdensarv, Kalklandet" />
+    <title>koldkrigsmuseum Stevnsfort</title>
+    <meta name="description" content="koldkrigsmuseum ved Stevns Klint. Lr om den kolde krig og nyd Stevns Klint's andre attraktioner" />
+    <meta name="keywords" content="Koldkrigsmuseum Stevnsfort, Stevns Klint, UNESCO Verdensarv, Kalklandet" />
     <meta name="author" content="Charlotte Fuchs" />
+
+    <link rel="stylesheet" type="text/css" href="css/grid.css" />
     <link rel="stylesheet" type="text/css" href="css/demo.css" />
     <link rel="stylesheet" type="text/css" href="css/component.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <style type="text/css">
+        #splash {
+            display: none !important;
+        }
+
+        .splashHeader img {
+            width: 100%;
+        }
+
+        #mobileSplash {
+            display: none !important;
+        }
+
+        .banner_inner {
+            display: none !important;
+        }
+
+        main {
+            max-width: 100%;
+            margin-top: 30px;
+        }
+
+        h1.animate {
+            display: none !important;
+        }
+
+        div#flag {
+            display: block;
+        }
+
+        h1.pagesGrid-item {
+            padding: 0px;
+            font-size: 22px;
+            text-align: center;
+            background-color: #ec7f44 !important;
+            margin: 0 auto;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            width: 100%;
+
+        }
+
+        /* intern nav */
+        .page-nav {
+            background-color: #628ca1;
+        }
+
+        .page-nav a.active {
+            background-color: #ec7f44;
+            color: #FFF;
+            cursor: default;
+        }
+
+        .page-nav a:hover {
+
+            background-color: #317793;
+            color: #FFF;
+
+        }
+
+        .page-nav ul li a {
+
+            text-decoration: none;
+            padding: inherit;
+            color: #ec7f44;
+            width: inherit;
+            padding: 0 10px;
+            padding-bottom: 0px;
+            padding-bottom: 0px;
+            padding-bottom: 10px;
+
+        }
+
+        @media screen and (max-width: 768px) {
+
+            /* Show Hamburger*/
+            h1.pagesGrid-item {
+                display: none;
+            }
+
+            .page-nav ul li a {
+                width: 100%;
+            }
+
+            .page-nav ul li a.active {
+                width: 100%;
+                background-color: #ec7f44;
+                color: #FFF;
+                padding: inherit;
+            }
+        }
+
+        /* pagesGrid */
+        .pagesGrid-item-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+
+        @media screen and (max-width: 809px) {
+
+
+            article.kalk {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                padding-top: 30px;
+
+            }
+
+            .grid-item {
+                width: 50%;
+                height: auto;
+                grid-template-rows: 1fr 1fr;
+            }
+
+            .grid-item:nth-child(1) {
+                grid-column: 1 / 7;
+                grid-row: 1 / 2;
+            }
+
+            .grid-item:nth-child(2) {
+                grid-column: 1 / 3;
+                grid-row: span 1;
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            .grid-item:nth-child(3) {
+                grid-column: 1 / 3;
+                grid-row: span 1;
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            .grid-item:nth-child(4) {
+                grid-column: 3 / 7;
+                grid-row: span 2;
+            }
+
+            .grid-item:nth-child(5) {
+                grid-column: 1 / 7;
+                grid-row: span 1;
+                width: 100%;
+                text-align: center;
+                padding-top: 1em;
+                border-left: none;
+            }
+
+            p.grid-item:nth-child(5) {
+                text-align: left;
+            }
+        }
+
+        @media all and (max-width: 575px) {
+            .grid-container {
+                display: grid;
+                grid-template-columns: 1fr;
+                padding-top: 10px;
+
+            }
+
+            article.kalk {
+                display: grid;
+                grid-template-columns: 1fr;
+                padding-top: 0px;
+            }
+
+            .grid-item {
+                width: 100%;
+                height: auto;
+                grid-template-rows: 1fr;
+            }
+
+            .grid-item:nth-child(1) {
+                grid-column: 1 / 7;
+                grid-row: 1 / 2;
+            }
+
+            .grid-item:nth-child(2) {
+                grid-column: 1 / 7;
+                grid-row: span 1;
+            }
+
+            .grid-item:nth-child(3) {
+                grid-column: 1 / 7;
+                grid-row: span 1;
+            }
+
+            .grid-item:nth-child(4) {
+                grid-column: 1 / 7;
+                grid-row: span 1;
+            }
+
+            .grid-item:nth-child(5) {
+                grid-column: 1 / 7;
+                grid-row: span 1;
+            }
+        }
+
+        @media all and (max-width: 750px) {
+            .breakFooter {
+
+                width: 100%;
+                float: none;
+                margin: 0 auto;
+            }
+
+            .footerFloat ul {
+                text-align: left;
+            }
+
+            div.footerFloat {
+                width: 100%;
+                text-align: center;
+            }
+
+            .navi li {
+                line-height: 40px;
+                height: 40px;
+                border-bottom: 1px solid #b3aa87;
+                width: 100%;
+            }
+        }
+
+        @media all and (max-width: 500px) {
+
+            div.splashHeader img {
+                width: auto;
+                height: 220px;
+            }
+        }
+
     </style>
 </head>
 
@@ -26,12 +258,24 @@
                         <ul class="menu">
                             <li class="search-item">
                                 <input placeholder="Search" type="search" class="search">
-                                <a class="icon icon-search"><img class="icon" src="slider/ikoner/STEVNS_MUSEUM_ikon.png"><span>Søg</span></a>
+                                <a class="icon icon-search"><img class="icon" src="slider/ikoner/searchKalklandet.png"><span>Sg</span></a>
+                            </li>
+                            <li>
+                                <div>
+                                    <img class="icon" src="slider/ikoner/kalklandet_lille_ikon.png">
+                                    <a href="http://medicinolie.dk/kalklandet/index.html">Kalklandet</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img class="icon" src="slider/ikoner/K_stevnsfort_koldkrigsmuseum.png">
+                                    <a href="http://medicinolie.dk/kalklandet/koldkrigsmuseum.html">Koldkrigsmuseum</a>
+                                </div>
                             </li>
                             <li>
                                 <div>
                                     <img class="icon" src="slider/ikoner/STEVNS_MUSEUM_ikon.png">
-                                    <a href="http://medicinolie.dk/kalklandet/index.html">Stevns Klint</a>
+                                    <a href="http://medicinolie.dk/kalklandet/stevns_museum.html">Stevns Museum</a>
                                 </div>
                             </li>
                             <li>
@@ -43,37 +287,53 @@
                             <li>
                                 <div>
                                     <img class="icon" src="slider/ikoner/stevns_naturcenter_ikon.png">
-                                    <a href="http://medicinolie.dk/kalklandet/geomuseet_Faxe.html">Stevns Naturcenter</a>
+                                    <a href="http://medicinolie.dk/kalklandet/stevns_naturcenter.html">Stevns Naturcenter</a>
                                 </div>
                             </li>
                             <li>
                                 <div>
-                                    <img class="icon" src="slider/ikoner/Koldkrigsmuseum_stevnsfort_kalklandet_ikon.png">
-                                    <a href="http://medicinolie.dk/kalklandet/geomuseet_Faxe.html">Koldkrigsmuseum</a>
+                                    <img class="icon" src="slider/ikoner/stevns_fyr_ikon.png">
+                                    <a href="http://medicinolie.dk/kalklandet/stevns_fyr.html">Stevns Fyr</a>
                                 </div>
                             </li>
                             <li>
                                 <div>
-                                    <img class="icon" src="slider/ikoner/STEVNS_MUSEUM_ikon.png">
-                                    <a href="http://medicinolie.dk/kalklandet/geomuseet_Faxe.html">Stevns Klint</a>
-                                </div>
-                                <div>
-                                    <img class="icon" src="slider/ikoner/STEVNS_MUSEUM_ikon.png">
-                                    <a href="http://medicinolie.dk/kalklandet/geomuseet_Faxe.html">Stevns Klint</a>
+                                    <img class="icon" src="slider/ikoner/lille_heddinge_rytterskole.png">
+                                    <a href="http://medicinolie.dk/kalklandet/lille_heddinge_rytterskole.html">Lille Heddinge Rytterskole</a>
                                 </div>
                             </li>
                             <li>
                                 <div>
-                                    <img class="icon" src="slider/ikoner/STEVNS_MUSEUM_ikon.png">
-                                    <a href="http://medicinolie.dk/kalklandet/geomuseet_Faxe.html">Stevns Klint</a>
+                                    <img class="icon" src="slider/ikoner/haslev_museum_ikon.png">
+                                    <a href="http://medicinolie.dk/kalklandet/haslevMuseum.html">Haslev Museum</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img class="icon" src="slider/ikoner/videnOm.png">
+                                    <a href="http://medicinolie.dk/kalklandet/videnOm.html">Viden om</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img class="icon" src="slider/ikoner/aktiviteter.png">
+                                    <a href="http://medicinolie.dk/kalklandet/aktiviteter.html">Aktiviteter</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <img class="icon" src="slider/ikoner/aboutUs.png">
+                                    <a href="http://medicinolie.dk/kalklandet/aboutUs.html">Om os</a>
                                 </div>
                             </li>
                         </ul>
                     </div><!-- /scroller -->
                 </nav>
-              </li>
+            </li>
             <li><img class="mobileLogo" src="slider/ikoner/kalklandet_lille_ikon.png"></li>
-            <li><p class="mobileTekst"> en del af Unesco's verdensarv</p></li>
+            <li>
+                <p class="mobileTekst"> en del af Unesco's verdensarv</p>
+            </li>
             <li><img class="myLogo" src="slider/museum_kalklandet_logo_1.png" /></li>
         </ul>
         <header>
@@ -82,18 +342,163 @@
                 <div class="container">
                     <h1 class="animate">Stevns Klint</h1>
                     <div class="banner_inner">
-                        <img class="mySlides" src="slider/geomuseet_faxe.png" />
                         <img class="mySlides" src="slider/Koldkrigsmuseum_stevnsfort_kalklandet.png" />
+                        <img class="mySlides" src="slider/geomuseet_faxe.png" />
                         <img class="mySlides" src="slider/stevns_naturcenter.png" />
                         <img class="mySlides" src="slider/stevns_museum_kalklandet_unescos_verdensarv.png" />
+                        <img class="mySlides" src="slider/rytterskolen_lille_heddinge.png" />
                         <img class="mySlides" src="slider/haslev_museum1.png" />
                         <img class="mySlides" src="slider/stevns_fyr.png" />
                     </div>
                 </div>
             </div><!-- /splash -->
+            <div id="flag">
+                <div class="flag_inner">
+                    <img class="myFlag" src="flag/denmark.jpg" />
+                    <img class="myFlag" src="flag/tyskland.jpg" />
+                    <img class="myFlag" src="flag/united_kingdom.jpg" />
+                </div>
+            </div><!-- flag -->
         </header>
     </div><!-- /container -->
+    <div class="area-wrapper">
+        <main class="kalken">
+            <div class="flag_inner" class="pagesGrid-item"></div>
+            <h1 class="overskrift" class="pagesGrid-item"></h1>
+            <section class="indhold" class="pagesGrid-item-container">
 
+            </section>
+            <section class="kalken" class="pagesGrid-item">
+
+            </section>
+        </main>
+    </div>
+    <!--------
+        <template>
+            <article class="kalk">
+                <h2 class="grid-item"></h2>
+                <h3 class="grid-item"></h3>
+                <p class="grid-item"></p>
+                <img class="grid-item" class="billede" src="" alt="" />
+                <div class="grid-item"></div>
+            </article>
+        </template>->
+
+
+    <!-- Footer -->
+    <div id="wrapper">
+        <div id="footer">
+            <div class="breakFooter">
+                <div class="footerFloat">
+                    <h4>Sociale medier</h4>
+                    <div class="mb-5 flex-center">
+                        <a class="fb-ic">
+                            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a><!-- Facebook -->
+                        <a class="ins-ic">
+                            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!--Instagram-->
+                        <a class="pin-ic">
+                            <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+                        </a>
+                        <!--Pinterest-->
+                    </div>
+                    <!--flext-->
+                </div>
+                <div class="footerFloat">
+                    <h4>Vores opgave</h4>
+                    <ul>
+                        <li>Formidling</li>
+                        <li>Samarbejds partnere</li>
+                        <li>Stevns Klint som verdensarv</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footerFloat">
+                <h4>Hvem er vi</h4>
+                <ul>
+                    <li>Østsæjllands Museumsforening</li>
+                    <li>Ledige stillinger</li>
+                    <li>Museets historie</li>
+                    <li>Medarbejdere</li>
+                    <li>Frivillige</li>
+                    <li>Bestyrelse</li>
+                    <li>Sponsorer</li>
+                    <li>Presse</li>
+                </ul>
+            </div>
+            <div class="breakFooter">
+                <div class="footerFloat">
+                    <h4>Find vej</h4>
+                    <ul>
+                        <li>Guide med tog</li>
+                        <li>Guide med cykel</li>
+                    </ul>
+                    <div class="kort"><iframe id="kort" src="https://maps.google.com/maps?hl=da&ie=UTF8&t=m&ll=55.279616,12.444291&spn=0.004278,0.00912&z=16&output=embed" frameborder="0"></iframe><a href="https://maps.google.com/maps?hl=da&ie=UTF8&t=m&ll=55.279616,12.444291&spn=0.004278,0.00912&z=16&source=embed"></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <h3> © 2019. ❤ </h3>
+    </div><!-- Copyright -->
+    <!--Script-->
+    <script>
+        let indhold = {};
+        let kalken = [];
+
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+            hentJson1();
+            hentJson2();
+        }
+
+        async function hentJson1() {
+            let url = "http://medicinolie.dk/kalklandet/wordpress/wp-json/wp/v2/kalkenpages2222/203";
+            let jsonData = await fetch(url);
+            indhold = await jsonData.json();
+            console.log(indhold);
+            visIndhold();
+        }
+
+        function visIndhold() {
+            document.querySelector(".overskrift").textContent = indhold.title.rendered;
+            document.querySelector(".indhold").innerHTML = indhold.content.rendered;
+        }
+        async function hentJson2() {
+            let url = "http://medicinolie.dk/kalklandet/wordpress/wp-json/wp/v2/kalk";
+            let jsonData = await fetch(url);
+            kalken = await jsonData.json();
+            console.log(kalken);
+            visKalken();
+        }
+
+        function visKalken() {
+            let dest = document.querySelector(".kalken");
+            let temp = document.querySelector("template");
+            kalken.forEach(kalk => {
+
+                let klon = temp.cloneNode(true).content;
+                /*klon.querySelector("h2").innerHTML = kalk.overskrift;
+                klon.querySelector("h2").innerHTML = kalk.content.rendered;
+                klon.querySelector("p").innerHTML = kalk.beskrivelse;
+                klon.querySelector("img").src = kalk.billede.guid;
+                klon.querySelector(".billede").src = kalk.billede.guid;
+                klon.querySelector("img").src = kalk.billede.guid;*/
+                klon.querySelector("h2").innerHTML = kalk.overskrift;
+                klon.querySelector("h3").innerHTML = kalk.h3text;
+                klon.querySelector("p").innerHTML = kalk.beskrivelse + " " + kalk.beskrivelse_2;
+                klon.querySelector("img").src = kalk.billede.guid;
+                klon.querySelector("div").innerHTML = kalk.opening + " " + kalk.kontakt;
+                klon.querySelector("div").innerHTML = kalk.opening_2 + " " + kalk.kontakt_2;
+                //klon.querySelector("div").innerHTML = kalk.kontakt;
+                dest.appendChild(klon);
+            });
+        }
+
+    </script>
     <script src="js/classie.js"></script>
     <script src="js/myMenu.js"></script>
     <script>
@@ -117,6 +522,18 @@
             x[myIndex - 1].style.display = "block";
             setTimeout(carousel, 3000); // Change image every 2 seconds
         }
+
+    </script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+
     </script>
 </body>
 
