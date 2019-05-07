@@ -376,27 +376,16 @@
     </div><!-- /container -->
     <div class="area-wrapper">
         <main class="kalken">
-            <div class="flag_inner" class="pagesGrid-item"></div>
-            <h1 class="overskrift" class="pagesGrid-item"></h1>
-            <section class="indhold" class="pagesGrid-item-container">
+            <div class="flag_inner pagesGrid-item"></div>
+            <h1 class="overskrift pagesGrid-item"></h1>
+            <section class="indhold pagesGrid-item-container">
 
             </section>
-            <section class="kalken" class="pagesGrid-item">
+            <section class="kalken pagesGrid-item">
 
             </section>
         </main>
     </div>
-    <!--------
-        <template>
-            <article class="kalk">
-                <h2 class="grid-item"></h2>
-                <h3 class="grid-item"></h3>
-                <p class="grid-item"></p>
-                <img class="grid-item" class="billede" src="" alt="" />
-                <div class="grid-item"></div>
-            </article>
-        </template>->
-
 
     <!-- Footer -->
     <div id="wrapper">
@@ -480,36 +469,6 @@
             document.querySelector(".overskrift").textContent = indhold.title.rendered;
             document.querySelector(".indhold").innerHTML = indhold.content.rendered;
         }
-        async function hentJson2() {
-            let url = "http://medicinolie.dk/kalklandet/wordpress/wp-json/wp/v2/kalk";
-            let jsonData = await fetch(url);
-            kalken = await jsonData.json();
-            console.log(kalken);
-            visKalken();
-        }
-
-        function visKalken() {
-            let dest = document.querySelector(".kalken");
-            let temp = document.querySelector("template");
-            kalken.forEach(kalk => {
-
-                let klon = temp.cloneNode(true).content;
-                /*klon.querySelector("h2").innerHTML = kalk.overskrift;
-                klon.querySelector("h2").innerHTML = kalk.content.rendered;
-                klon.querySelector("p").innerHTML = kalk.beskrivelse;
-                klon.querySelector("img").src = kalk.billede.guid;
-                klon.querySelector(".billede").src = kalk.billede.guid;
-                klon.querySelector("img").src = kalk.billede.guid;*/
-                klon.querySelector("h2").innerHTML = kalk.overskrift;
-                klon.querySelector("h3").innerHTML = kalk.h3text;
-                klon.querySelector("p").innerHTML = kalk.beskrivelse + " " + kalk.beskrivelse_2;
-                klon.querySelector("img").src = kalk.billede.guid;
-                klon.querySelector("div").innerHTML = kalk.opening + " " + kalk.kontakt;
-                klon.querySelector("div").innerHTML = kalk.opening_2 + " " + kalk.kontakt_2;
-                //klon.querySelector("div").innerHTML = kalk.kontakt;
-                dest.appendChild(klon);
-            });
-        }
     </script>
     <script src="js/classie.js"></script>
     <script src="js/myMenu.js"></script>
@@ -544,4 +503,6 @@
             }
         }
     </script>
-</body></html>
+</body>
+
+</html>
