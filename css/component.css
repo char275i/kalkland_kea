@@ -1,3 +1,9 @@
+/* Hvide link p Social media */
+.link_white {
+    color: #FFF;
+
+}
+
 /* styles for opening menu */
 
 .menu-wrapper.open-all,
@@ -12,7 +18,7 @@
 }
 
 .menu-wrapper.open-all .submenu li {
-    max-height: 40px
+    max-height: 50px
 }
 
 /*menu*/
@@ -65,7 +71,7 @@
 .search-item {
     padding-bottom: 43px;
     overflow: hidden;
-    height: 39px;
+    height: 52px;
 }
 
 .no-touch .menu-main a:hover,
@@ -85,7 +91,7 @@
 
 .menu-main li.trigger {
     position: relative;
-    width: 39px;
+    width: 52px;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -98,14 +104,14 @@
     float: right !important;
     border-right: none;
     border-left: 1px solid #b3ac87;
-    max-height: 39px;
+    max-height: 52px;
 }
 
 .menu-main > div:last-child {
     float: left !important;
     border-right: none;
     border-left: 1px solid #b3ac87;
-    max-height: 39px;
+    max-height: 52px;
 }
 
 .menu-main > li > a {
@@ -129,7 +135,7 @@
     bottom: 0;
     left: 0;
     overflow: hidden;
-    width: 40px;
+    width: 52px;
     border-top: 1px solid #b3ac87;
     background: none;
     -webkit-transform: translateX(-60px);
@@ -244,11 +250,11 @@ input.search:focus {
     position: absolute;
     top: 2px;
     left: 0;
-    max-height: 43px;
+    max-height: 52px;
 }
 
 img.icon {
-    max-height: 42px;
+    max-height: 52px;
     display: inline-block;
     padding-top: 2px;
     margin-bottom: -4px;
