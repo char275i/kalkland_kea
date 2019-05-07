@@ -2,19 +2,21 @@
 .area-wrapper {
     display: grid;
 }
+
 .indhold {
-  background-color: white;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .kalk {
     display: grid;
 }
-.kalk img{
-      max-width: 500px;
+
+.kalk img {
     margin: 0 auto;
 }
+
 .indhold img {
     text-align: center;
     max-width: 100%;
@@ -24,24 +26,30 @@
 .indhold figure {
     margin: 0;
 }
+
 .overskrift {
     text-align: center;
     display: none;
 }
-        .kalk h2 {
-            padding-left: 1em;
-        }
-        .kalk p{
-            padding-left: 1em;
-        }
-        main {
-            max-width: 100%;
-            margin-top: 0px;
-        }
-/* Frontpage*/
- div.frontGrid-item {
-    padding-left: 2em;
+
+.kalk h2 {
+    padding-left: 1em;
 }
+
+.kalk p {
+    padding-left: 1em;
+}
+
+main {
+    max-width: 100%;
+    margin-top: 0px;
+}
+
+/* Frontpage*/
+div.frontGrid-item {
+    padding: 2em;
+}
+
 section.indhold {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -103,15 +111,16 @@ img.frontGrid-item {
     text-align: center;
     margin: 0 auto;
 }
+
 .frontGrid-item img {
     text-align: center;
     margin: 0 auto;
     max-width: 500px;
 }
+
 div.frontGrid-item {
     font-size: 16px;
     text-align: left;
-    padding: 8px;
 }
 
 h1.frontGrid-item {
@@ -120,7 +129,9 @@ h1.frontGrid-item {
 }
 
 div.frontGrid-item {
-    padding-left: 1em;
+    padding: 2em;
+    padding-top: 2em;
+    padding-top: 0;
 }
 
 @media screen and (max-width: 809px) {
@@ -190,12 +201,6 @@ div.frontGrid-item {
         grid-column: 2 / 3;
         grid-row: span 1;
     }
-
-
-    .indhold img {
-        text-align: center;
-        margin: 0 auto;
-    }
 }
 
 @media all and (max-width: 575px) {
@@ -263,11 +268,6 @@ div.frontGrid-item {
         text-align: center;
         border-left: none;
     }
-
-    .indhold img {
-        text-align: center;
-        margin: 0 auto;
-    }
 }
 
 /* other start pages ***********************************************************************/
@@ -282,8 +282,8 @@ article.kalk {
 .grid-item:nth-child(1) {
     grid-column: 1 / 7;
     grid-row: 1 / 2;
-  text-align: center;
-font-size: 26px;
+    text-align: center;
+    font-size: 26px;
 }
 
 .grid-item:nth-child(2) {
@@ -299,14 +299,12 @@ font-size: 26px;
 .grid-item:nth-child(4) {
     grid-column: 3/ 6;
     grid-row: 2 / 5;
-    max-width: 80%;
 }
 
 .grid-item:nth-child(5) {
     grid-column: 6 /7;
     grid-row: 2/ 5;
     border-left: 4px solid #EC7F44;
-    width: 180px;
 }
 
 /* grid højde */
@@ -315,17 +313,21 @@ font-size: 26px;
     text-align: left;
     padding: 8px;
 }
+
 div.grid-item {
-    padding-left: 1em;
+    padding: 2em;
 }
+
 img.grid-item {
     text-align: center;
     margin: 0 auto;
+    width: 100%;
 }
-        @media screen and (max-width: 809px) {
+
+@media screen and (max-width: 809px) {
 
 
-    article.kalk{
+    article.kalk {
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding-top: 30px;
@@ -336,43 +338,46 @@ img.grid-item {
         width: 50%;
         height: auto;
         grid-template-rows: 1fr 1fr;
-}
+    }
+
     .grid-item:nth-child(1) {
-        grid-column: 1 / 7;
-        grid-row: 1 / 2;
+        grid-column: 1 / 3;
+        grid-row: span 1;
     }
 
     .grid-item:nth-child(2) {
         grid-column: 1 / 3;
         grid-row: span 1;
         width: 100%;
-margin: 0 auto;
+        margin: 0 auto;
     }
 
     .grid-item:nth-child(3) {
         grid-column: 1 / 3;
         grid-row: span 1;
-                width: 100%;
-margin: 0 auto;
+        width: 100%;
+        margin: 0 auto;
     }
 
     .grid-item:nth-child(4) {
-        grid-column: 3 / 7;
-        grid-row: span 2;
+        grid-column: 1 / 3;
+        grid-row: span 1;
     }
 
     .grid-item:nth-child(5) {
-        grid-column: 1 / 7;
+        grid-column: 1 / 3;
         grid-row: span 1;
         width: 100%;
-text-align: center;
-padding-top: 1em;
-border-left: none;
+        text-align: center;
+        padding-top: 1em;
+        border-left: none;
     }
+
     p.grid-item:nth-child(5) {
         text-align: left;
     }
 }
+
 @media all and (max-width: 575px) {
     .grid-container {
         display: grid;
@@ -418,11 +423,12 @@ border-left: none;
         grid-row: span 1;
     }
 }
+
 /* pagesGrid */
-      .frontGrid-item img {
+.frontGrid-item img {
     text-align: center;
     margin: 0 auto;
-    max-width: 100%;
+    width: 100%;
 }
 
 .pagesGrid-item-container {
@@ -461,7 +467,6 @@ div.pagesGrid-item:nth-child(2) {
     grid-column: 6/ 7;
     grid-row: 4/ 5;
     border-left: 4px solid #EC7F44;
-    width: 180px;
 }
 
 .pagesGrid-item {
@@ -471,14 +476,15 @@ div.pagesGrid-item:nth-child(2) {
 }
 
 div.pagesGrid-item {
-    padding-left: 1em;
+    padding: 2em;
 }
 
 img.pagesGrid-item {
     text-align: center;
     margin: 0 auto;
 }
- /* pagesGrid max 809px*/
+
+/* pagesGrid max 809px*/
 @media screen and (max-width: 809px) {
 
     section.indhold {
@@ -513,13 +519,12 @@ img.pagesGrid-item {
     div.pagesGrid-item:nth-child(4) {
         grid-column: 1 / 2;
         grid-row: span 1;
-        max-width: 350px;
     }
 
     div.pagesGrid-item:nth-child(5) {
         grid-column: 2 / 3;
         grid-row: span 1;
-        width: auto;
+        width: 100%;
     }
 
     div.pagesGrid-item:nth-child(6) {
@@ -548,33 +553,33 @@ img.pagesGrid-item {
     }
 
     div.pagesGrid-item:nth-child(1) {
-        grid-column: 1 / 7;
+        grid-column: 1 / 3;
         grid-row: span 1;
     }
 
     div.pagesGrid-item:nth-child(2) {
-        grid-column: 1 / 7;
+        grid-column: 1 / 3;
         grid-row: span 1;
     }
 
     div.pagesGrid-item:nth-child(3) {
-        grid-column: 1 /7;
+        grid-column: 1 /3;
         grid-row: span 1;
     }
 
     div.pagesGrid-item:nth-child(4) {
-        grid-column: 1 / 7;
+        grid-column: 1 / 3;
         grid-row: span 1;
         margin: 0 auto;
     }
 
     div.pagesGrid-item:nth-child(5) {
-        grid-column: 1 / 7;
+        grid-column: 1 / 3;
         grid-row: span 1;
     }
 
     div.pagesGrid-item:nth-child(6) {
-        grid-column: 1 / 7;
+        grid-column: 1 / 3;
         grid-row: span 1;
     }
 
