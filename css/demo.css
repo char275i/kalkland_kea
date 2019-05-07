@@ -482,7 +482,7 @@ iframe#kort {
 @media screen and (max-width: 809px) {
 	div.splashHeader img {
       max-height: 300px;
-    padding: 30px 0 0;
+    padding: 10px 0 0;
 }
     main {
         margin-top: 60px;
