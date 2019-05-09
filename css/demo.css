@@ -200,8 +200,6 @@ span {
         background-color: #42c1c0;
         color: #FFF;
         cursor: default;
-        background-color: #8cc63e;
-        color: #ec7f44;
         padding-top: 10px;
     }
 
@@ -257,7 +255,7 @@ img.mySlides {
 }
 
 div#splash.demo-banner {
-    max-width: 100%:
+    max-width: 100%;
 }
 
 #splash {
@@ -476,7 +474,8 @@ iframe#kort {
 @media screen and (max-width: 809px) {
     div.splashHeader img {
         max-height: 300px;
-        padding: 10px 0 0;
+        padding: 10px 0;
+        padding-bottom: 0px;
     }
 
     main {
